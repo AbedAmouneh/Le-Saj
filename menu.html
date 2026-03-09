@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu | Les Saj – Shawarma, Wraps, Platters & More</title>
+  <meta name="description" content="Browse the full Les Saj menu — authentic Middle Eastern cuisine including shawarma, falafel wraps, rice bowls, platters, manakeesh, desserts and a kids menu. Halal, vegan and vegetarian options." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-text"><span class="name">Les Saj</span><span class="tagline">Middle Eastern Cuisine</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="catering.html">Catering</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+    </div>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="menu.html" class="active">Menu</a><a href="order.html">Order Online</a>
+  <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact</a>
+  <a href="order.html" class="btn btn-primary">Order Now &rarr;</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="menu-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Menu</span></div>
+    <h1>Our Menu</h1>
+    <p>Authentic Middle Eastern &amp; Lebanese cuisine, prepared fresh daily in our Winnipeg kitchens. <span style="color:var(--gold);">Ready to order?</span> <a href="order.html" style="color:var(--gold); text-decoration:underline;">Click here</a></p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem;">
+      <span style="color:rgba(255,255,255,0.6); font-size:0.82rem; background:rgba(255,255,255,0.1); padding:0.4rem 0.9rem; border-radius:100px;"><b style="color:var(--green, #2E7D32)">Ⓥ</b> = Vegetarian/Vegan available</span>
+      <span style="color:rgba(255,255,255,0.6); font-size:0.82rem; background:rgba(255,255,255,0.1); padding:0.4rem 0.9rem; border-radius:100px;">☪️ All items 100% Halal</span>
+      <span style="color:rgba(255,255,255,0.6); font-size:0.82rem; background:rgba(255,255,255,0.1); padding:0.4rem 0.9rem; border-radius:100px;">🔥 Spicy options available</span>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="menu-filter-bar">
+  <div class="container">
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all">🍽️ All Items</button>
+      <button class="filter-btn" data-filter="shawarma">🌯 Signature Shawarma</button>
+      <button class="filter-btn" data-filter="wraps">🥙 Wraps</button>
+      <button class="filter-btn" data-filter="bowls">🍚 Rice &amp; Bowls</button>
+      <button class="filter-btn" data-filter="platters">🍽️ Platters</button>
+      <button class="filter-btn" data-filter="sides">🧆 Appetizers &amp; Sides</button>
+      <button class="filter-btn" data-filter="manakeesh">🫓 Pockets &amp; Manakeesh</button>
+      <button class="filter-btn" data-filter="desserts">🍯 Desserts</button>
+      <button class="filter-btn" data-filter="kids">👦 Kids Menu</button>
+    </div>
+  </div>
+</div>
+
+<!-- MENU CONTENT -->
+<section class="section bg-cream">
+  <div class="container">
+
+    <!-- SIGNATURE SHAWARMA -->
+    <div class="menu-section reveal" data-cat="shawarma" id="shawarma">
+      <h2 class="menu-section-title"><span class="icon">🌯</span> Signature Shawarma</h2>
+      <p class="menu-section-desc">Our flagship items — hand-crafted, generously loaded, and wrapped in fresh-baked saj bread.</p>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="shawarma">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Traditional Arabic Shawarma" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Traditional Arabic Shawarma</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Authentically seasoned &amp; grilled meat (chicken/beef/donair), wrapped with garlic sauce, pickles, fries. Cut into bite-size pieces, served with side of fries, pickles and garlic dip.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Chicken</span><span class="dish-tag">Beef</span><span class="dish-tag">Donair</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="shawarma">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?auto=format&fit=crop&w=600&q=80" alt="Double Double Shawarma" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Double Double Shawarma</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Twice the meat, twice the flavour! A hearty mix of juicy chicken and tender beef shawarma — loaded into saj bread with garlic sauce, crispy fries and mixed pickles.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Chicken + Beef</span><span class="dish-tag">Fan Fav</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="shawarma">
+          <div class="menu-item-img placeholder">🌯</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Jumbo Donair / Chicken Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">A generous portion of meat of your choice wrapped in warm saj bread, packed with sweet donair sauce or garlic sauce, fresh lettuce, tomatoes, onions and cheese.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Donair</span><span class="dish-tag">Chicken</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WRAPS -->
+    <div class="menu-section reveal" data-cat="wraps" id="wraps">
+      <h2 class="menu-section-title"><span class="icon">🥙</span> Wraps</h2>
+      <p class="menu-section-desc">Classic and creative wraps for every taste — including vegan and vegetarian options.</p>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1593001872095-7d5b3868fb1d?auto=format&fit=crop&w=600&q=80" alt="Falafel" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Falafel Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div>
+            </div>
+            <p class="menu-item-desc">Crispy falafel balls, hummus, tahini, pickles, pickled turnips, tomatoes &amp; lettuce — wrapped in warm saj bread.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Vegan</span><span class="dish-tag">Halal</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🥦</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Fried Vegetables Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div>
+            </div>
+            <p class="menu-item-desc">Fried eggplant, cauliflower, potatoes, hummus, garlic sauce, tahini, pickles, turnips, tomatoes &amp; lettuce.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Vegan</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🌿</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Mixed Vegetarian Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div>
+            </div>
+            <p class="menu-item-desc">Falafel, fried eggplant, cauliflower, potatoes, hummus, garlic sauce, tahini, pickles, turnips, tomatoes &amp; lettuce.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Vegan</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🍗</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Chicken Shawarma Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Regular chicken wrap with lettuce, tomatoes, pickles &amp; garlic sauce.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Chicken</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🥩</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Beef Shawarma Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Marinated beef, hummus, garlic sauce, tahini, pickles, turnips, lettuce &amp; tomatoes.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Beef</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Butter Chicken Shawarma" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Butter Chicken Shawarma Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-s">NEW</span><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Tender grilled chicken shawarma tossed in homemade rich, spiced butter chicken sauce, wrapped in saj bread with garlic sauce, pickles &amp; onions.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Fusion</span><span class="dish-tag">Must Try</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🍖</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Lamb Kebab Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">2 skewers of ground lamb, hummus, garlic sauce, tahini, pickles, turnips, lettuce &amp; tomatoes.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Lamb</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🍢</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Shish Tawouk Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">A skewer of chicken breast cubes, garlic mayo, pickles, fries &amp; cabbage.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Chicken</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="wraps">
+          <div class="menu-item-img placeholder">🌯</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Mixed Wrap</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">A delicious combo of beef and chicken shawarma — the best of both worlds.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Chicken + Beef</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RICE & SALAD BOWLS -->
+    <div class="menu-section reveal" data-cat="bowls" id="bowls">
+      <h2 class="menu-section-title"><span class="icon">🍚</span> Rice &amp; Salad Bowls</h2>
+      <p class="menu-section-desc">A hearty bowl of flavoured basmati rice or fresh garden salad topped with your choice of protein.</p>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="bowls">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1563379091054-2ce6f5a9c4d0?auto=format&fit=crop&w=600&q=80" alt="Rice Bowl" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Chicken / Beef / Donair Rice Bowl</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Flavoured basmati rice topped with your choice of protein — chicken shawarma, beef shawarma, or beef donair. Served with garlic sauce and pickles.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">3 Proteins</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="bowls">
+          <div class="menu-item-img placeholder">🍛</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Butter Chicken Rice Bowl</span>
+              <div class="menu-item-badges"><span class="badge badge-s">NEW</span></div>
+            </div>
+            <p class="menu-item-desc">Grilled chicken shawarma tossed in our rich, spiced butter chicken sauce over flavourful basmati rice.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Fusion</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="bowls">
+          <div class="menu-item-img placeholder">🫙</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Biryani Bowl</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Our version of Biryani — rice dish cooked with different spices layered with chicken.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Spiced Rice</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="bowls">
+          <div class="menu-item-img placeholder">🥗</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Tabbouleh &amp; Fattoush</span>
+              <div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div>
+            </div>
+            <p class="menu-item-desc">Hand-chopped fresh parsley with fine cracked wheat, diced tomatoes, onions, lemon &amp; olive oil. Or romaine, cucumbers, onions with toasted bread &amp; Middle Eastern dressing.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Vegan</span><span class="dish-tag">Salad</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLATTERS -->
+    <div class="menu-section reveal" data-cat="platters" id="platters">
+      <h2 class="menu-section-title"><span class="icon">🍽️</span> Platters</h2>
+      <p class="menu-section-desc">Perfect for sharing — your favourite grilled meats or falafel served with basmati rice, fresh salad, warm bread, creamy hummus, garlic sauce &amp; Middle Eastern mixed pickles.</p>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="platters">
+          <div class="menu-item-img">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Platter" loading="lazy" />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Individual Platters</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Choose your protein: Falafel (V), Fried Vegetable (V), Chicken, Beef Donair, Beef Shawarma, Shish Tawouk, or Lamb Kebab. Includes rice, salad, hummus, bread, garlic sauce &amp; pickles.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">7 Options</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="platters">
+          <div class="menu-item-img placeholder">🍽️</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Mixed Platter</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Choose any 2 of your favourite meats. Served with all the classic sides. Note: skewers take minimum 15 minutes.</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">Choose 2</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="platters">
+          <div class="menu-item-img placeholder">👫</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <span class="menu-item-name">Mixed Platter for Two</span>
+              <div class="menu-item-badges"><span class="badge badge-h">Halal</span></div>
+            </div>
+            <p class="menu-item-desc">Rice, fries, chicken, beef donair, shish skewer, lamb kebab, salad, 2 breads, hummus, garlic sauce, mixed pickles. The ultimate sharing experience!</p>
+            <div class="menu-item-footer">
+              <div class="dish-tags"><span class="dish-tag">For 2</span><span class="dish-tag">Best Value</span></div>
+              <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPETIZERS & SIDES -->
+    <div class="menu-section reveal" data-cat="sides" id="sides">
+      <h2 class="menu-section-title"><span class="icon">🧆</span> Appetizers &amp; Sides</h2>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="sides">
+          <div class="menu-item-img placeholder">🫘</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Hummus</span><div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div></div>
+            <p class="menu-item-desc">Smooth, creamy hummus — served with bread, with falafel, or with your choice of meat. The perfect starter.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">3 Styles</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="sides">
+          <div class="menu-item-img placeholder">🍇</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Grape Leaves</span><div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div></div>
+            <p class="menu-item-desc">Vegan stuffed grape leaves filled with rice, onion, mint, lemon juice and dill. Served cold — a traditional Mediterranean classic.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Vegan</span><span class="dish-tag">Cold</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="sides">
+          <div class="menu-item-img placeholder">🍆</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Baba Ganoush</span><div class="menu-item-badges"><span class="badge badge-v">Vegan</span></div></div>
+            <p class="menu-item-desc">Roasted eggplant blended with tahini, garlic, lemon juice and olive oil. Served with bread — smoky, velvety and delicious.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Vegan</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="sides">
+          <div class="menu-item-img placeholder">🍟</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Fries &amp; Poutine</span><div class="menu-item-badges"></div></div>
+            <p class="menu-item-desc">Seasoned Fries, Classic Poutine, Donair Poutine (donair strips + sweet sauce on fries), or Chicken Poutine.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">4 Styles</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MANAKEESH & POCKETS -->
+    <div class="menu-section reveal" data-cat="manakeesh" id="manakeesh">
+      <h2 class="menu-section-title"><span class="icon">🫓</span> Pockets &amp; Manakeesh</h2>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="manakeesh">
+          <div class="menu-item-img placeholder">🥪</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Pockets</span><div class="menu-item-badges"><span class="badge badge-h">Halal</span></div></div>
+            <p class="menu-item-desc">Chicken Pocket, Beef Donair Pocket, or Mixed Pocket (chicken, beef donair, spinach, cheese, garlic sauce).</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">3 Styles</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="manakeesh">
+          <div class="menu-item-img placeholder">🫓</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Manakeesh</span><div class="menu-item-badges"><span class="badge badge-v">Veg</span></div></div>
+            <p class="menu-item-desc">Traditional Lebanese flatbread — Cheese, Spinach &amp; Cheese, Muhammara &amp; Cheese, or Zaatar &amp; Cheese. Freshly baked and incredibly flavourful.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">4 Flavours</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-section reveal" data-cat="desserts" id="desserts">
+      <h2 class="menu-section-title"><span class="icon">🍯</span> Desserts</h2>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="desserts">
+          <div class="menu-item-img placeholder">🍯</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Baklava</span><div class="menu-item-badges"><span class="badge badge-v">Veg</span></div></div>
+            <p class="menu-item-desc">Classic flaky phyllo pastry layered with crushed nuts and drenched in sweet syrup. Available Round or Triangle — a Middle Eastern favourite.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Round</span><span class="dish-tag">Triangle</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="desserts">
+          <div class="menu-item-img placeholder">🍰</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Basbousa</span><div class="menu-item-badges"><span class="badge badge-v">Veg</span></div></div>
+            <p class="menu-item-desc">Traditional semolina cake soaked in sweet syrup — dense, moist and perfectly sweet. A beloved classic across the Middle East.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Semolina Cake</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIDS MENU -->
+    <div class="menu-section reveal" data-cat="kids" id="kids">
+      <h2 class="menu-section-title"><span class="icon">👦</span> Kids Menu <span style="font-size:0.9rem; font-weight:400; color:var(--text-muted);">— For Gen Alphas 12 &amp; Under</span></h2>
+      <p class="menu-section-desc">All items served with small fries. Ages 12 and below only. Stay no cap bussin fr fr.</p>
+      <div class="menu-items-grid">
+        <div class="menu-item" data-cat="kids">
+          <div class="menu-item-img placeholder">🐔</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">SUS MEAL</span><div class="menu-item-badges"><span class="badge badge-h">Halal</span></div></div>
+            <p class="menu-item-desc">15 pieces of crispy chicken nuggets, served with fries and your favourite dipping sauce. No cap, it's bussin.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">15pc Nuggets</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="kids">
+          <div class="menu-item-img placeholder">🧇</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">SKIBIDI MEAL</span></div>
+            <p class="menu-item-desc">2 mini cheese saj / quesadillas served with fries. Certified skibidi approved.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Mini Saj</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="kids">
+          <div class="menu-item-img placeholder">🌯</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">SIGMA MEAL</span><div class="menu-item-badges"><span class="badge badge-h">Halal</span></div></div>
+            <p class="menu-item-desc">Mini chicken or donair wrap — a smaller version of our classics for the youngest sigma grinds.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Mini Wrap</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+        <div class="menu-item" data-cat="kids">
+          <div class="menu-item-img placeholder">🍖</div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">BUSSIN MEAL</span><div class="menu-item-badges"><span class="badge badge-h">Halal</span></div></div>
+            <p class="menu-item-desc">Side donair strips served with fries. It's literally bussin, no cap.</p>
+            <div class="menu-item-footer"><div class="dish-tags"><span class="dish-tag">Donair Strips</span></div><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Order?</h2>
+    <p>Get your favourites delivered or swing by one of our 3 Winnipeg locations.</p>
+    <div class="flex-center gap-2" style="flex-wrap:wrap;">
+      <a href="order.html" class="btn btn-gold btn-lg"><i class="fas fa-shopping-bag"></i> Order Delivery</a>
+      <a href="catering.html" class="btn btn-outline btn-lg"><i class="fas fa-star"></i> Book Catering</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-text">Les <span>Saj</span></div>
+        <div class="footer-tagline">Middle Eastern Cuisine · Est. 2017</div>
+        <p>Serving Winnipeg authentic Middle Eastern flavours since 2017.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Pages</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
+          <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">All 3 Locations</div>
+        <div class="footer-locations">
+          <div class="footer-location"><strong>St. James</strong><span>1038 St James St</span><a href="tel:2042198939">(204) 219-8939</a></div>
+          <div class="footer-location"><strong>Pembina Hwy</strong><span>2589 Pembina Hwy #70</span><a href="tel:2046156006">(204) 615-6006</a></div>
+          <div class="footer-location"><strong>Grant Ave</strong><span>1857 Grant Ave Unit C</span><a href="tel:2044143771">(204) 414-3771</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Stay Updated</div>
+        <div class="footer-newsletter"><p>Get daily specials and new menu alerts.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" /><button type="submit">Go</button></form></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Les Saj – Middle Eastern Cuisine. All rights reserved.</p>
+      <div class="footer-halal"><span class="halal-badge">HALAL</span><span>100% Halal Certified</span></div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-order">
+  <a href="order.html" class="floating-btn floating-order-btn"><i class="fas fa-shopping-bag"></i> Order Now</a>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

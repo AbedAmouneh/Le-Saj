@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Saj | Authentic Middle Eastern Cuisine in Winnipeg</title>
+  <meta name="description" content="Les Saj brings fresh, authentic Middle Eastern cuisine to Winnipeg — shawarma, falafel, saj bread wraps, platters & catering. 3 locations across the city." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Homepage-specific extras */
+    .stats-bar { background: var(--white); padding: 3.5rem 0; }
+    .stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
+    .stat-block { padding: 1.5rem; }
+    .stat-block .number { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 700; color: var(--red); line-height: 1; }
+    .stat-block .unit { font-size: 1.2rem; }
+    .stat-block .label { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; letter-spacing: 0.05em; }
+    .stat-divider { width: 1px; background: var(--cream-dark); margin: 1.5rem 0; }
+    .signature-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0; min-height: 520px; }
+    .signature-main { position: relative; overflow: hidden; }
+    .signature-main img { width: 100%; height: 100%; object-fit: cover; }
+    .signature-main-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,14,8,0.9) 0%, transparent 60%);
+      display: flex; align-items: flex-end; padding: 2.5rem;
+    }
+    .signature-side { display: grid; grid-template-rows: 1fr 1fr; }
+    .signature-side-item { position: relative; overflow: hidden; }
+    .signature-side-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; }
+    .signature-side-item:hover img { transform: scale(1.06); }
+    .signature-side-item-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,14,8,0.8) 0%, transparent 50%);
+      display: flex; align-items: flex-end; padding: 1.5rem;
+    }
+    .award-strip {
+      background: var(--gold); padding: 1.5rem 0;
+      display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;
+    }
+    .award-item { display: flex; align-items: center; gap: 0.75rem; color: var(--white); font-size: 0.9rem; font-weight: 600; }
+    .award-icon { font-size: 1.4rem; }
+    @media (max-width: 768px) {
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .signature-grid { grid-template-columns: 1fr; }
+      .signature-main { height: 300px; }
+      .signature-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; height: 200px; }
+      .award-strip { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ──────────────────────────── -->
+<nav class="nav transparent">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-text">
+        <span class="name">Les Saj</span>
+        <span class="tagline">Middle Eastern Cuisine</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Online</a>
+      <a href="catering.html">Catering</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:2042198939" class="nav-phone"><i class="fas fa-phone-alt"></i> (204) 219-8939</a>
+      <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ─────────────────────────── -->
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="order.html">Order Online</a>
+  <a href="catering.html">Catering</a>
+  <a href="our-story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="order.html" class="btn btn-primary">Order Now &rarr;</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-star" style="color:var(--gold)"></i> Winnipeg's #1 Middle Eastern Restaurant</div>
+    <h1>Authentic<br /><em>Middle Eastern</em><br />Cuisine</h1>
+    <p>Fresh saj bread, hand-crafted shawarma, crispy falafel — prepared daily from the finest ingredients. Three locations across Winnipeg.</p>
+    <div class="hero-actions">
+      <a href="menu.html" class="btn btn-primary btn-lg"><i class="fas fa-utensils"></i> View Full Menu</a>
+      <a href="order.html" class="btn btn-outline btn-lg"><i class="fas fa-shopping-bag"></i> Order Online</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="number">3</span>
+      <span class="label">Locations</span>
+    </div>
+    <div class="hero-stat">
+      <span class="number">2017</span>
+      <span class="label">Est.</span>
+    </div>
+    <div class="hero-stat">
+      <span class="number">100%</span>
+      <span class="label">Halal</span>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ── TICKER ─────────────────────────────── -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span class="ticker-dot">✦</span> Fresh Saj Bread Daily</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> 100% Halal</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> Vegan &amp; Vegetarian Options</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> 3 Winnipeg Locations</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> Catering for Any Event</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> Open 7 Days a Week</span>
+    <span class="ticker-item"><span class="ticker-dot">✦</span> Delivery via Uber Eats, SkipTheDishes &amp; DoorDash</span>
+  </div>
+</div>
+
+<!-- ── STATS BAR ───────────────────────────── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-block reveal" data-delay="1">
+        <div class="number"><span data-count="3" data-suffix="+">0</span></div>
+        <div class="label">Winnipeg Locations</div>
+      </div>
+      <div class="stat-block reveal" data-delay="2">
+        <div class="number"><span data-count="2017">0</span></div>
+        <div class="label">Established</div>
+      </div>
+      <div class="stat-block reveal" data-delay="3">
+        <div class="number"><span data-count="40" data-suffix="+">0</span></div>
+        <div class="label">Menu Items</div>
+      </div>
+      <div class="stat-block reveal" data-delay="4">
+        <div class="number"><span data-count="100" data-suffix="%">0</span></div>
+        <div class="label">Halal Certified</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── AWARD STRIP ─────────────────────────── -->
+<div class="award-strip">
+  <div class="award-item"><span class="award-icon">🏆</span> Winnipeg's Best Shawarma</div>
+  <div class="award-item"><span class="award-icon">🌿</span> Fresh Ingredients Daily</div>
+  <div class="award-item"><span class="award-icon">☪️</span> 100% Halal Certified</div>
+  <div class="award-item"><span class="award-icon">🚗</span> Delivery &amp; Takeout</div>
+</div>
+
+<!-- ── MENU CATEGORIES ─────────────────────── -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Serve</span>
+      <h2 class="section-title reveal">Explore Our <span>Menu</span></h2>
+      <p class="section-subtitle reveal">From signature shawarma wraps to sizzling platters and indulgent desserts — there's something for everyone at Les Saj.</p>
+    </div>
+    <div class="categories-grid">
+      <a href="menu.html#shawarma" class="category-card reveal" data-delay="1">
+        <div class="category-icon">🌯</div>
+        <h4>Signature Shawarma</h4>
+        <p>Our iconic wraps</p>
+      </a>
+      <a href="menu.html#wraps" class="category-card reveal" data-delay="2">
+        <div class="category-icon">🥙</div>
+        <h4>Wraps</h4>
+        <p>10+ varieties</p>
+      </a>
+      <a href="menu.html#bowls" class="category-card reveal" data-delay="3">
+        <div class="category-icon">🍚</div>
+        <h4>Rice &amp; Salad Bowls</h4>
+        <p>Fresh &amp; hearty</p>
+      </a>
+      <a href="menu.html#platters" class="category-card reveal" data-delay="4">
+        <div class="category-icon">🍽️</div>
+        <h4>Platters</h4>
+        <p>Perfect to share</p>
+      </a>
+      <a href="menu.html#sides" class="category-card reveal" data-delay="1">
+        <div class="category-icon">🧆</div>
+        <h4>Appetizers &amp; Sides</h4>
+        <p>Hummus, falafel &amp; more</p>
+      </a>
+      <a href="menu.html#manakeesh" class="category-card reveal" data-delay="2">
+        <div class="category-icon">🫓</div>
+        <h4>Manakeesh</h4>
+        <p>Traditional flatbread</p>
+      </a>
+      <a href="menu.html#desserts" class="category-card reveal" data-delay="3">
+        <div class="category-icon">🍯</div>
+        <h4>Desserts</h4>
+        <p>Baklava &amp; basbousa</p>
+      </a>
+      <a href="menu.html#kids" class="category-card reveal" data-delay="4">
+        <div class="category-icon">👦</div>
+        <h4>Kids Menu</h4>
+        <p>For Gen Alphas 12 &amp; under</p>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="menu.html" class="btn btn-primary btn-lg reveal">See Full Menu &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SIGNATURE PHOTO BLOCK ───────────────── -->
+<section style="background: var(--dark);">
+  <div class="signature-grid">
+    <div class="signature-main reveal-left">
+      <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80" alt="Shawarma platter" loading="lazy" />
+      <div class="signature-main-overlay">
+        <div>
+          <div class="section-label">Our Signature</div>
+          <h2 style="color:var(--white); font-size:2rem; margin-bottom:1rem;">Traditional Arabic Shawarma</h2>
+          <p style="color:rgba(255,255,255,0.75); max-width:400px; margin-bottom:1.5rem;">Authentically seasoned &amp; grilled meat, wrapped in fresh saj bread with garlic sauce, pickles &amp; fries.</p>
+          <a href="menu.html#shawarma" class="btn btn-gold">Order This</a>
+        </div>
+      </div>
+    </div>
+    <div class="signature-side reveal-right">
+      <div class="signature-side-item">
+        <img src="https://images.unsplash.com/photo-1593001872095-7d5b3868fb1d?auto=format&fit=crop&w=600&q=80" alt="Falafel wrap" loading="lazy" />
+        <div class="signature-side-item-overlay">
+          <div>
+            <h4 style="color:var(--white); font-size:1.1rem;">Crispy Falafel Wrap</h4>
+            <p style="color:rgba(255,255,255,0.65); font-size:0.8rem; margin:0;">🌿 Vegan &amp; Halal</p>
+          </div>
+        </div>
+      </div>
+      <div class="signature-side-item">
+        <img src="https://images.unsplash.com/photo-1563379091054-2ce6f5a9c4d0?auto=format&fit=crop&w=600&q=80" alt="Rice bowl" loading="lazy" />
+        <div class="signature-side-item-overlay">
+          <div>
+            <h4 style="color:var(--white); font-size:1.1rem;">Shawarma Rice Bowl</h4>
+            <p style="color:rgba(255,255,255,0.65); font-size:0.8rem; margin:0;">🍚 Fresh Basmati Rice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURED DISHES ─────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Must-Try Dishes</span>
+      <h2 class="section-title reveal">Customer <span>Favourites</span></h2>
+    </div>
+    <div class="dishes-grid">
+      <div class="dish-card reveal" data-delay="1">
+        <div class="dish-card-img">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Butter Chicken Shawarma" loading="lazy" />
+          <span class="dish-badge new">NEW</span>
+        </div>
+        <div class="dish-card-body">
+          <h3>Butter Chicken Shawarma Wrap</h3>
+          <p>Tender grilled chicken tossed in our homemade butter chicken sauce, wrapped in saj bread with garlic sauce, pickles &amp; onions.</p>
+          <div class="dish-card-footer">
+            <div class="dish-tags">
+              <span class="dish-tag">Halal</span>
+              <span class="dish-tag">Fan Fav</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal" data-delay="2">
+        <div class="dish-card-img">
+          <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Double Double Shawarma" loading="lazy" />
+          <span class="dish-badge">SIGNATURE</span>
+        </div>
+        <div class="dish-card-body">
+          <h3>Double Double Shawarma</h3>
+          <p>Twice the meat, twice the flavour! Juicy chicken &amp; beef shawarma loaded into saj bread with garlic sauce, crispy fries &amp; mixed pickles.</p>
+          <div class="dish-card-footer">
+            <div class="dish-tags">
+              <span class="dish-tag">Halal</span>
+              <span class="dish-tag">Filling</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal" data-delay="3">
+        <div class="dish-card-img">
+          <img src="https://images.unsplash.com/photo-1593001872095-7d5b3868fb1d?auto=format&fit=crop&w=600&q=80" alt="Falafel Wrap" loading="lazy" />
+          <span class="dish-badge vegan">VEGAN</span>
+        </div>
+        <div class="dish-card-body">
+          <h3>Crispy Falafel Wrap</h3>
+          <p>Golden falafel balls, creamy hummus, tahini, pickled turnips, tomatoes &amp; lettuce — all wrapped in warm saj bread.</p>
+          <div class="dish-card-footer">
+            <div class="dish-tags">
+              <span class="dish-tag">Vegan</span>
+              <span class="dish-tag">Halal</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPLIT: OUR STORY ────────────────────── -->
+<div class="split-section">
+  <div class="split-image reveal-left">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior" loading="lazy" />
+  </div>
+  <div class="split-content split-dark reveal-right">
+    <span class="section-label">Our Story</span>
+    <h2 style="color: var(--white);">A Passion for <span style="color:var(--gold)">Authentic</span> Food</h2>
+    <p>Founded in 2017 by three food-loving friends — Mohamad, Rochelle, and Adam — Les Saj started with a simple mission: bring the real flavours of the Middle East to Winnipeg. Every dish is prepared fresh daily using traditional recipes and the finest ingredients.</p>
+    <p style="margin-top:1rem;">The name "Les Saj" is inspired by the iconic dome-shaped griddle used across the Middle East to bake our signature flatbread — the heart of every wrap we serve.</p>
+    <a href="our-story.html" class="btn btn-gold" style="margin-top:2rem; width:fit-content;">Read Our Story &rarr;</a>
+  </div>
+</div>
+
+<!-- ── CATERING CTA ────────────────────────── -->
+<div class="split-section" style="flex-direction: row-reverse;">
+  <div class="split-image reveal-right">
+    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" alt="Catering spread" loading="lazy" />
+  </div>
+  <div class="split-content split-red reveal-left">
+    <span class="section-label" style="color: rgba(255,255,255,0.7);">Events &amp; Corporate</span>
+    <h2 style="color:var(--white);">We Cater for <span style="color:var(--gold-light)">Any Event</span></h2>
+    <p>Office lunches, corporate events, weddings, birthday parties — let Les Saj handle the food. We create custom menus tailored to your needs and budget, bringing the full Les Saj experience to your venue.</p>
+    <ul style="margin: 1.5rem 0; color: rgba(255,255,255,0.85); display:flex; flex-direction:column; gap:0.6rem;">
+      <li>✓ &nbsp; Custom menus for any dietary requirement</li>
+      <li>✓ &nbsp; Pickup or delivery available</li>
+      <li>✓ &nbsp; Perfect for 10 to 500+ guests</li>
+      <li>✓ &nbsp; Booking available online or by phone</li>
+    </ul>
+    <a href="catering.html" class="btn btn-outline btn-lg" style="width:fit-content; margin-top:0.5rem;">Request Catering Quote &rarr;</a>
+  </div>
+</div>
+
+<!-- ── REVIEWS ─────────────────────────────── -->
+<section class="section reviews-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" style="color:var(--gold)">What Customers Say</span>
+      <h2 class="section-title reveal" style="color:var(--white)">Loved by <span style="color:var(--gold)">Winnipeg</span></h2>
+      <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:1rem;">
+        <span style="color:var(--gold); font-size:1.3rem;">★★★★★</span>
+        <span style="color:rgba(255,255,255,0.7); font-size:0.9rem;">4.7 / 5.0 on Google &nbsp;·&nbsp; 500+ reviews</span>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal" data-delay="1">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Absolutely the best shawarma in Winnipeg — and I've tried them all. The saj bread is incredible, always fresh and warm. The double double shawarma is unreal."</p>
+        <div class="review-author">
+          <div class="review-avatar">K</div>
+          <div>
+            <div class="review-name">Khalid M.</div>
+            <div class="review-platform"><span class="review-badge-g">G</span> Google Review · St. James</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal" data-delay="2">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We used Les Saj to cater our company lunch for 80 people and they absolutely knocked it out of the park. Everyone raved about the food. We'll definitely be back!"</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background: var(--gold)">S</div>
+          <div>
+            <div class="review-name">Sarah L.</div>
+            <div class="review-platform"><span class="review-badge-g">G</span> Google Review · Grant Ave</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal" data-delay="3">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"As a vegetarian, I'm always looking for options and Les Saj delivers! The falafel wrap and grape leaves are phenomenal. Such authentic flavours — feels like Lebanon."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background: #2E7D32">A</div>
+          <div>
+            <div class="review-name">Amira T.</div>
+            <div class="review-platform"><span class="review-badge-g">G</span> Google Review · Pembina Hwy</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal" data-delay="4">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The butter chicken shawarma is a genius fusion — my new obsession. Kids loved the skibidi meal too. Great family spot with super friendly staff."</p>
+        <div class="review-author">
+          <div class="review-avatar" style="background: #1565C0">J</div>
+          <div>
+            <div class="review-name">James R.</div>
+            <div class="review-platform"><span class="review-badge-g">G</span> Google Review · Pembina Hwy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="https://www.google.com/maps/search/Les+Saj+Winnipeg" target="_blank" rel="noopener" class="btn btn-outline">
+        <i class="fab fa-google"></i> Read All Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── 3 LOCATIONS ──────────────────────────── -->
+<section class="section bg-cream" id="locations">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Find Us</span>
+      <h2 class="section-title reveal">3 Locations Across <span>Winnipeg</span></h2>
+      <p class="section-subtitle reveal">Dine in, take out, or get it delivered — we're always nearby.</p>
+    </div>
+    <div class="locations-grid">
+      <!-- Location 1 -->
+      <div class="location-card featured reveal" data-delay="1">
+        <div class="location-header">
+          <div class="location-number">1</div>
+          <div>
+            <div class="location-name">St. James</div>
+            <div class="location-tag">⭐ Original Location · Est. 2017</div>
+          </div>
+        </div>
+        <div class="location-body">
+          <div class="location-info">
+            <div class="location-row">
+              <i class="fas fa-map-marker-alt location-icon"></i>
+              <div>
+                <strong>Address</strong>
+                <span>1038 St James St<br />Winnipeg, MB R3H 0K5</span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-phone location-icon"></i>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:2042198939" style="color:var(--red)">(204) 219-8939</a></span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-clock location-icon"></i>
+              <div>
+                <strong>Hours</strong>
+                <div class="hours-grid">
+                  <span class="day">Mon – Fri</span>&nbsp;&nbsp;11am – 10pm<br />
+                  <span class="day">Saturday</span>&nbsp;&nbsp;11am – 10pm<br />
+                  <span class="day">Sunday</span>&nbsp;&nbsp;12pm – 7pm
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="https://maps.google.com/?q=1038+St+James+St+Winnipeg" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-directions"></i> Get Directions</a>
+            <a href="tel:2042198939" class="btn btn-outline-dark btn-sm"><i class="fas fa-phone"></i> Call</a>
+          </div>
+        </div>
+      </div>
+      <!-- Location 2 -->
+      <div class="location-card reveal" data-delay="2">
+        <div class="location-header">
+          <div class="location-number">2</div>
+          <div>
+            <div class="location-name">Pembina Hwy</div>
+            <div class="location-tag">🆕 Newest Location</div>
+          </div>
+        </div>
+        <div class="location-body">
+          <div class="location-info">
+            <div class="location-row">
+              <i class="fas fa-map-marker-alt location-icon"></i>
+              <div>
+                <strong>Address</strong>
+                <span>2589 Pembina Hwy #70<br />Winnipeg, MB R3T 2H5</span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-phone location-icon"></i>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:2046156006" style="color:var(--red)">(204) 615-6006</a></span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-clock location-icon"></i>
+              <div>
+                <strong>Hours</strong>
+                <div class="hours-grid">
+                  <span class="day">Mon – Sun</span>&nbsp;&nbsp;Call for hours
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="https://maps.google.com/?q=2589+Pembina+Hwy+Winnipeg" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-directions"></i> Get Directions</a>
+            <a href="tel:2046156006" class="btn btn-outline-dark btn-sm"><i class="fas fa-phone"></i> Call</a>
+          </div>
+        </div>
+      </div>
+      <!-- Location 3 -->
+      <div class="location-card reveal" data-delay="3">
+        <div class="location-header">
+          <div class="location-number">3</div>
+          <div>
+            <div class="location-name">Grant Ave</div>
+            <div class="location-tag">🌙 Late Night Fri &amp; Sat</div>
+          </div>
+        </div>
+        <div class="location-body">
+          <div class="location-info">
+            <div class="location-row">
+              <i class="fas fa-map-marker-alt location-icon"></i>
+              <div>
+                <strong>Address</strong>
+                <span>1857 Grant Ave Unit C<br />Winnipeg, MB R3N 1Z2</span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-phone location-icon"></i>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:2044143771" style="color:var(--red)">(204) 414-3771</a></span>
+              </div>
+            </div>
+            <div class="location-row">
+              <i class="fas fa-clock location-icon"></i>
+              <div>
+                <strong>Hours</strong>
+                <div class="hours-grid">
+                  <span class="day">Mon – Wed</span>&nbsp;&nbsp;11am – 10pm<br />
+                  <span class="day">Thursday</span>&nbsp;&nbsp;10am – 10pm<br />
+                  <span class="day">Fri – Sat</span>&nbsp;&nbsp;11am – 12am<br />
+                  <span class="day">Sunday</span>&nbsp;&nbsp;12pm – 10pm
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="https://maps.google.com/?q=1857+Grant+Ave+Winnipeg" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-directions"></i> Get Directions</a>
+            <a href="tel:2044143771" class="btn btn-outline-dark btn-sm"><i class="fas fa-phone"></i> Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INSTAGRAM STRIP ─────────────────────── -->
+<section class="instagram-strip">
+  <div class="container" style="margin-bottom:1.5rem; text-align:center;">
+    <span class="section-label">Follow Us</span>
+    <h3 style="color:var(--white);">@LeSajWinnipeg on Instagram</h3>
+  </div>
+  <div class="instagram-grid">
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1593001872095-7d5b3868fb1d?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1563379091054-2ce6f5a9c4d0?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+    <div class="insta-item"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&h=400&q=80" alt="Instagram" loading="lazy" /></div>
+  </div>
+</section>
+
+<!-- ── CTA BAND ────────────────────────────── -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="reveal">Ready to <em style="font-style:normal; color:var(--gold-light)">Order</em>?</h2>
+    <p class="reveal">Get your favourite Les Saj dishes delivered right to your door, or visit us at any of our three Winnipeg locations.</p>
+    <div class="flex-center gap-2 reveal" style="flex-wrap:wrap;">
+      <a href="order.html" class="btn btn-gold btn-lg"><i class="fas fa-shopping-bag"></i> Order Delivery</a>
+      <a href="menu.html" class="btn btn-outline btn-lg"><i class="fas fa-utensils"></i> View Menu</a>
+      <a href="catering.html" class="btn btn-outline btn-lg"><i class="fas fa-star"></i> Book Catering</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-text">Les <span>Saj</span></div>
+        <div class="footer-tagline">Middle Eastern Cuisine · Est. 2017</div>
+        <p>Serving Winnipeg authentic Middle Eastern flavours since 2017. Fresh ingredients, traditional recipes, made with love daily.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link" aria-label="Google"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Pages</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order Online</a>
+          <a href="catering.html">Catering</a>
+          <a href="our-story.html">Our Story</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">All 3 Locations</div>
+        <div class="footer-locations">
+          <div class="footer-location">
+            <strong>St. James (Original)</strong>
+            <span>1038 St James St, MB R3H 0K5</span>
+            <a href="tel:2042198939">(204) 219-8939</a>
+          </div>
+          <div class="footer-location">
+            <strong>Pembina Hwy</strong>
+            <span>2589 Pembina Hwy #70, MB R3T 2H5</span>
+            <a href="tel:2046156006">(204) 615-6006</a>
+          </div>
+          <div class="footer-location">
+            <strong>Grant Ave</strong>
+            <span>1857 Grant Ave Unit C, MB R3N 1Z2</span>
+            <a href="tel:2044143771">(204) 414-3771</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Stay in the Loop</div>
+        <div class="footer-newsletter">
+          <p>Get notified about daily specials, new menu items, and exclusive deals.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div style="margin-top:1.5rem;">
+            <div class="footer-heading" style="margin-bottom:0.75rem;">Order Online</div>
+            <div class="footer-links">
+              <a href="https://ubereats.com" target="_blank"><i class="fas fa-external-link-alt" style="font-size:0.7rem; margin-right:0.4rem;"></i>Uber Eats</a>
+              <a href="https://skipthedishes.com" target="_blank"><i class="fas fa-external-link-alt" style="font-size:0.7rem; margin-right:0.4rem;"></i>SkipTheDishes</a>
+              <a href="https://doordash.com" target="_blank"><i class="fas fa-external-link-alt" style="font-size:0.7rem; margin-right:0.4rem;"></i>DoorDash</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Les Saj – Middle Eastern Cuisine. All rights reserved.</p>
+      <div class="footer-halal">
+        <span class="halal-badge">HALAL</span>
+        <span>100% Halal Certified</span>
+      </div>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── FLOATING ORDER BUTTON ───────────────── -->
+<div class="floating-order">
+  <a href="order.html" class="floating-btn floating-order-btn">
+    <i class="fas fa-shopping-bag"></i> Order Now
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
