@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Order Online | Les Saj – Delivery in Winnipeg</title>
@@ -27,58 +27,59 @@
 <nav class="nav scrolled">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><div class="nav-logo-text"><span class="name">Les Saj</span><span class="tagline">Middle Eastern Cuisine</span></div></a>
-    <div class="nav-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html" class="active">Order Online</a><a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact</a></div>
-    <div class="nav-cta"><a href="order.html" class="btn btn-primary btn-sm">Order Now</a></div>
+    <div class="nav-links"><a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" class="active" data-i18n="nav.order">Order Online</a><a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact</a></div>
+    <div class="nav-cta"><div class="lang-switcher"></div><a href="order.html" class="btn btn-primary btn-sm" data-i18n="nav.orderNow">Order Now</a></div>
     <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
-  <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact</a>
-  <a href="order.html" class="btn btn-primary">Order Now &rarr;</a>
+  <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+  <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switcher" style="margin: 0.75rem auto;"></div>
+  <a href="order.html" class="btn btn-primary" data-i18n="nav.orderNow">Order Now &rarr;</a>
 </div>
 
 <div class="page-hero page-hero-dark" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1920&q=60');">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Order Online</span></div>
-    <h1>Order for Delivery</h1>
-    <p>Your favourite Les Saj dishes delivered fresh to your door. Choose your preferred app below.</p>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span class="sep">/</span><span>Order Online</span></div>
+    <h1 data-i18n="orderPage.hero">Order for Delivery</h1>
+    <p data-i18n="orderPage.heroSub">Your favourite Les Saj dishes delivered fresh to your door. Choose your preferred app below.</p>
   </div>
 </div>
 
 <section class="section bg-cream">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Choose Your App</span>
-      <h2 class="section-title reveal">Order Through Your <span>Favourite App</span></h2>
-      <p class="section-subtitle reveal">We're live on all three major delivery platforms in Winnipeg. Just click below and your food is on its way!</p>
+      <span class="section-label" data-i18n="orderPage.appLabel">Choose Your App</span>
+      <h2 class="section-title reveal"><span data-i18n="orderPage.appTitle">Order Through Your Favourite App</span></h2>
+      <p class="section-subtitle reveal" data-i18n="orderPage.appSub">We're live on all three major delivery platforms in Winnipeg. Just click below and your food is on its way!</p>
     </div>
     <div class="order-platforms" style="justify-content:center;">
       <div class="platform-card reveal" data-delay="1" style="background:var(--white); border-radius:var(--radius-xl); box-shadow:var(--shadow-md); border:2px solid transparent; transition:var(--transition); cursor:pointer; flex:1; min-width:220px; max-width:340px;">
         <span class="platform-emoji">🛵</span>
         <div class="platform-name">Uber Eats</div>
-        <div class="platform-sub">Fast delivery across Winnipeg</div>
-        <a href="https://ubereats.com/search?q=Les+Saj+Winnipeg" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Order on Uber Eats</a>
+        <div class="platform-sub" data-i18n="orderPage.uberSub">Fast delivery across Winnipeg</div>
+        <a href="https://ubereats.com/search?q=Les+Saj+Winnipeg" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="orderPage.uberBtn">Order on Uber Eats</a>
       </div>
       <div class="platform-card reveal" data-delay="2" style="background:var(--white); border-radius:var(--radius-xl); box-shadow:var(--shadow-md); border:2px solid transparent; transition:var(--transition); cursor:pointer; flex:1; min-width:220px; max-width:340px;">
         <span class="platform-emoji">🍔</span>
         <div class="platform-name">SkipTheDishes</div>
-        <div class="platform-sub">Canadian delivery favourite</div>
-        <a href="https://skipthedishes.com/les-saj" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Order on SkipTheDishes</a>
+        <div class="platform-sub" data-i18n="orderPage.skipSub">Canadian delivery favourite</div>
+        <a href="https://skipthedishes.com/les-saj" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="orderPage.skipBtn">Order on SkipTheDishes</a>
       </div>
       <div class="platform-card reveal" data-delay="3" style="background:var(--white); border-radius:var(--radius-xl); box-shadow:var(--shadow-md); border:2px solid transparent; transition:var(--transition); cursor:pointer; flex:1; min-width:220px; max-width:340px;">
         <span class="platform-emoji">🚗</span>
         <div class="platform-name">DoorDash</div>
-        <div class="platform-sub">Quick &amp; reliable delivery</div>
-        <a href="https://doordash.com/search/stores/Les%20Saj%20Winnipeg" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Order on DoorDash</a>
+        <div class="platform-sub" data-i18n="orderPage.doorSub">Quick &amp; reliable delivery</div>
+        <a href="https://doordash.com/search/stores/Les%20Saj%20Winnipeg" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="orderPage.doorBtn">Order on DoorDash</a>
       </div>
     </div>
 
     <!-- DIRECT ORDER CTA -->
     <div class="direct-cta reveal">
-      <span class="savings-badge">💡 Pro Tip — Save Money</span>
-      <h3>Skip the App Fees — Call &amp; Pick Up Direct</h3>
-      <p>Third-party apps charge fees on top of your order. Call your nearest Les Saj location directly and pick up for free — same great food, no extra cost.</p>
+      <span class="savings-badge" data-i18n="orderPage.proTip">💡 Pro Tip — Save Money</span>
+      <h3 data-i18n="orderPage.skipFees">Skip the App Fees — Call &amp; Pick Up Direct</h3>
+      <p data-i18n="orderPage.skipFeesP">Third-party apps charge fees on top of your order. Call your nearest Les Saj location directly and pick up for free — same great food, no extra cost.</p>
       <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
         <a href="tel:2042198939" class="btn btn-gold btn-lg"><i class="fas fa-phone"></i> St. James (204) 219-8939</a>
         <a href="tel:2046156006" class="btn btn-outline btn-lg"><i class="fas fa-phone"></i> Pembina (204) 615-6006</a>
@@ -87,26 +88,26 @@
       <div class="tips-grid">
         <div class="tip-card">
           <div class="tip-icon">⏱️</div>
-          <h4>Fast Pickup</h4>
-          <p>Most orders ready in 15–20 minutes. Wraps in under 10!</p>
+          <h4 data-i18n="orderPage.pickup1">Fast Pickup</h4>
+          <p data-i18n="orderPage.pickup1p">Most orders ready in 15–20 minutes. Wraps in under 10!</p>
         </div>
         <div class="tip-card">
           <div class="tip-icon">💰</div>
-          <h4>No Delivery Fees</h4>
-          <p>Skip the platform surcharges and service fees entirely.</p>
+          <h4 data-i18n="orderPage.noFees">No Delivery Fees</h4>
+          <p data-i18n="orderPage.noFeesp">Skip the platform surcharges and service fees entirely.</p>
         </div>
         <div class="tip-card">
           <div class="tip-icon">🍞</div>
-          <h4>Freshest Food</h4>
-          <p>Pick up fresh means piping hot saj bread every time.</p>
+          <h4 data-i18n="orderPage.fresh">Freshest Food</h4>
+          <p data-i18n="orderPage.freshP">Pick up fresh means piping hot saj bread every time.</p>
         </div>
       </div>
     </div>
 
     <!-- NOT SURE WHAT TO ORDER -->
     <div style="text-align:center; margin-top:4rem;" class="reveal">
-      <span class="section-label">Not Sure What to Order?</span>
-      <h3 style="color:var(--text); margin-bottom:1rem;">Browse Our Full Menu First</h3>
+      <span class="section-label" data-i18n="orderPage.notSure">Not Sure What to Order?</span>
+      <h3 style="color:var(--text); margin-bottom:1rem;" data-i18n="orderPage.browseFirst">Browse Our Full Menu First</h3>
       <a href="menu.html" class="btn btn-outline-dark btn-lg"><i class="fas fa-utensils"></i> View Full Menu</a>
     </div>
   </div>
@@ -114,8 +115,8 @@
 
 <section class="cta-band cta-dark">
   <div class="container">
-    <h2>Planning a Big Event?</h2>
-    <p>For groups of 10 or more, our catering service offers custom menus, delivery, and setup — at a fraction of the per-person cost of ordering individually.</p>
+    <h2 data-i18n="orderPage.ctaTitle">Planning a Big Event?</h2>
+    <p data-i18n="orderPage.ctaP">For groups of 10 or more, our catering service offers custom menus, delivery, and setup — at a fraction of the per-person cost of ordering individually.</p>
     <a href="catering.html" class="btn btn-primary btn-lg"><i class="fas fa-star"></i> Explore Catering</a>
   </div>
 </section>
@@ -123,12 +124,13 @@
 <footer class="footer"><div class="container">
   <div class="footer-top">
     <div class="footer-brand"><div class="footer-logo-text">Les <span>Saj</span></div><div class="footer-tagline">Middle Eastern Cuisine · Est. 2017</div><p>Fresh, authentic Middle Eastern food in Winnipeg since 2017.</p><div class="social-links"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-link"><i class="fab fa-tiktok"></i></a></div></div>
-    <div><div class="footer-heading">Pages</div><div class="footer-links"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a><a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact Us</a></div></div>
-    <div><div class="footer-heading">All 3 Locations</div><div class="footer-locations"><div class="footer-location"><strong>St. James</strong><span>1038 St James St</span><a href="tel:2042198939">(204) 219-8939</a></div><div class="footer-location"><strong>Pembina Hwy</strong><span>2589 Pembina Hwy #70</span><a href="tel:2046156006">(204) 615-6006</a></div><div class="footer-location"><strong>Grant Ave</strong><span>1857 Grant Ave Unit C</span><a href="tel:2044143771">(204) 414-3771</a></div></div></div>
-    <div><div class="footer-heading">Stay Updated</div><div class="footer-newsletter"><p>Daily specials &amp; offers.</p><form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" /><button>Go</button></form></div></div>
+    <div><div class="footer-heading" data-i18n="footer.pages">Pages</div><div class="footer-links"><a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a><a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact Us</a></div></div>
+    <div><div class="footer-heading" data-i18n="footer.locations">All 3 Locations</div><div class="footer-locations"><div class="footer-location"><strong>St. James</strong><span>1038 St James St</span><a href="tel:2042198939">(204) 219-8939</a></div><div class="footer-location"><strong>Pembina Hwy</strong><span>2589 Pembina Hwy #70</span><a href="tel:2046156006">(204) 615-6006</a></div><div class="footer-location"><strong>Grant Ave</strong><span>1857 Grant Ave Unit C</span><a href="tel:2044143771">(204) 414-3771</a></div></div></div>
+    <div><div class="footer-heading" data-i18n="footer.stayLoop">Stay Updated</div><div class="footer-newsletter"><p>Daily specials &amp; offers.</p><form class="newsletter-form" onsubmit="return false;"><input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="Your email" /><button data-i18n="footer.subscribe">Go</button></form></div></div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2025 Les Saj – Middle Eastern Cuisine.</p><div class="footer-halal"><span class="halal-badge">HALAL</span><span>100% Halal Certified</span></div></div>
+  <div class="footer-bottom"><p>&copy; 2025 Les Saj – Middle Eastern Cuisine. All rights reserved.</p><div class="footer-halal"><span class="halal-badge">HALAL</span><span data-i18n="footer.halal">100% Halal Certified</span></div></div>
 </div></footer>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

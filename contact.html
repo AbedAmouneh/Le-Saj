@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,25 +23,26 @@
       <div class="nav-logo-text"><span class="name">Les Saj</span><span class="tagline">Middle Eastern Cuisine</span></div>
     </a>
     <div class="nav-links">
-      <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
-      <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html" class="active">Contact</a>
+      <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+      <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
     </div>
-    <div class="nav-cta"><a href="order.html" class="btn btn-primary btn-sm">Order Now</a></div>
+    <div class="nav-cta"><div class="lang-switcher"></div><a href="order.html" class="btn btn-primary btn-sm" data-i18n="nav.orderNow">Order Now</a></div>
     <button class="hamburger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
-  <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact</a>
-  <a href="order.html" class="btn btn-primary">Order Now &rarr;</a>
+  <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+  <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switcher" style="margin: 0.75rem auto;"></div>
+  <a href="order.html" class="btn btn-primary" data-i18n="nav.orderNow">Order Now &rarr;</a>
 </div>
 
 <!-- PAGE HERO -->
 <div class="page-hero page-hero-dark">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact Us</span></div>
-    <h1>Contact &amp; Locations</h1>
-    <p>Find us at any of our three Winnipeg locations, give us a call, or send us a message — we'd love to hear from you.</p>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span class="sep">/</span><span>Contact Us</span></div>
+    <h1 data-i18n="contactPage.hero">Find Your Nearest Location</h1>
+    <p data-i18n="contactPage.heroSub">Find us at any of our three Winnipeg locations, give us a call, or send us a message — we'd love to hear from you.</p>
   </div>
 </div>
 
@@ -67,16 +68,16 @@
           <div class="location-info">
             <div class="location-row">
               <i class="fas fa-map-marker-alt location-icon"></i>
-              <div><strong>Address</strong><span>1038 St James St<br />Winnipeg, MB R3H 0K5</span></div>
+              <div><strong data-i18n="locations.addr">Address</strong><span>1038 St James St<br />Winnipeg, MB R3H 0K5</span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-phone location-icon"></i>
-              <div><strong>Phone</strong><span><a href="tel:2042198939" style="color:var(--red); font-weight:600;">(204) 219-8939</a></span></div>
+              <div><strong data-i18n="locations.phone">Phone</strong><span><a href="tel:2042198939" style="color:var(--red); font-weight:600;">(204) 219-8939</a></span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-clock location-icon"></i>
               <div>
-                <strong>Hours</strong>
+                <strong data-i18n="locations.hours">Hours</strong>
                 <div class="hours-grid">
                   <span class="day">Mon – Fri</span>&nbsp;&nbsp;11:00 am – 10:00 pm<br />
                   <span class="day">Saturday</span>&nbsp;&nbsp;11:00 am – 10:00 pm<br />
@@ -112,16 +113,16 @@
           <div class="location-info">
             <div class="location-row">
               <i class="fas fa-map-marker-alt location-icon"></i>
-              <div><strong>Address</strong><span>2589 Pembina Hwy #70<br />Winnipeg, MB R3T 2H5</span></div>
+              <div><strong data-i18n="locations.addr">Address</strong><span>2589 Pembina Hwy #70<br />Winnipeg, MB R3T 2H5</span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-phone location-icon"></i>
-              <div><strong>Phone</strong><span><a href="tel:2046156006" style="color:var(--red); font-weight:600;">(204) 615-6006</a></span></div>
+              <div><strong data-i18n="locations.phone">Phone</strong><span><a href="tel:2046156006" style="color:var(--red); font-weight:600;">(204) 615-6006</a></span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-clock location-icon"></i>
               <div>
-                <strong>Hours</strong>
+                <strong data-i18n="locations.hours">Hours</strong>
                 <div class="hours-grid">
                   <span class="day">Mon – Sun</span>&nbsp;&nbsp;Please call for hours<br />
                   <span style="font-size:0.78rem; color:var(--red);">📞 Call (204) 615-6006</span>
@@ -156,16 +157,16 @@
           <div class="location-info">
             <div class="location-row">
               <i class="fas fa-map-marker-alt location-icon"></i>
-              <div><strong>Address</strong><span>1857 Grant Ave Unit C<br />Winnipeg, MB R3N 1Z2</span></div>
+              <div><strong data-i18n="locations.addr">Address</strong><span>1857 Grant Ave Unit C<br />Winnipeg, MB R3N 1Z2</span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-phone location-icon"></i>
-              <div><strong>Phone</strong><span><a href="tel:2044143771" style="color:var(--red); font-weight:600;">(204) 414-3771</a></span></div>
+              <div><strong data-i18n="locations.phone">Phone</strong><span><a href="tel:2044143771" style="color:var(--red); font-weight:600;">(204) 414-3771</a></span></div>
             </div>
             <div class="location-row">
               <i class="fas fa-clock location-icon"></i>
               <div>
-                <strong>Hours</strong>
+                <strong data-i18n="locations.hours">Hours</strong>
                 <div class="hours-grid">
                   <span class="day">Mon – Wed</span>&nbsp;&nbsp;11:00 am – 10:00 pm<br />
                   <span class="day">Thursday</span>&nbsp;&nbsp;10:00 am – 10:00 pm<br />
@@ -197,7 +198,7 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info reveal-left">
-        <span class="section-label">Get in Touch</span>
+        <span class="section-label" data-i18n="contactPage.msgLabel">Get in Touch</span>
         <h2>Send Us a <span style="color:var(--red)">Message</span></h2>
         <p style="margin-bottom:2rem;">Have a question, feedback, or special request? We'd love to hear from you. Our team typically responds within a few hours during business hours.</p>
         <div class="contact-info-item">
@@ -300,14 +301,14 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">Pages</div>
+        <div class="footer-heading" data-i18n="footer.pages">Pages</div>
         <div class="footer-links">
-          <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
-          <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact Us</a>
+          <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+          <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact Us</a>
         </div>
       </div>
       <div>
-        <div class="footer-heading">All 3 Locations</div>
+        <div class="footer-heading" data-i18n="footer.locations">All 3 Locations</div>
         <div class="footer-locations">
           <div class="footer-location"><strong>St. James</strong><span>1038 St James St, MB R3H 0K5</span><a href="tel:2042198939">(204) 219-8939</a></div>
           <div class="footer-location"><strong>Pembina Hwy</strong><span>2589 Pembina Hwy #70, MB R3T 2H5</span><a href="tel:2046156006">(204) 615-6006</a></div>
@@ -315,19 +316,20 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">Stay Updated</div>
+        <div class="footer-heading" data-i18n="footer.stayLoop">Stay Updated</div>
         <div class="footer-newsletter"><p>Daily specials &amp; new menu items.</p>
-        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" /><button>Go</button></form></div>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="Your email" /><button data-i18n="footer.subscribe">Go</button></form></div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Les Saj – Middle Eastern Cuisine. All rights reserved.</p>
-      <div class="footer-halal"><span class="halal-badge">HALAL</span><span>100% Halal Certified</span></div>
+      <div class="footer-halal"><span class="halal-badge">HALAL</span><span data-i18n="footer.halal">100% Halal Certified</span></div>
     </div>
   </div>
 </footer>
 
 <div class="floating-order"><a href="order.html" class="floating-btn floating-order-btn"><i class="fas fa-shopping-bag"></i> Order Now</a></div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

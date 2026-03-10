@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,31 +17,33 @@
       <div class="nav-logo-text"><span class="name">Les Saj</span><span class="tagline">Middle Eastern Cuisine</span></div>
     </a>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Menu</a>
-      <a href="order.html">Order Online</a>
-      <a href="catering.html">Catering</a>
-      <a href="our-story.html">Our Story</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="menu.html" class="active" data-i18n="nav.menu">Menu</a>
+      <a href="order.html" data-i18n="nav.order">Order Online</a>
+      <a href="catering.html" data-i18n="nav.catering">Catering</a>
+      <a href="our-story.html" data-i18n="nav.story">Our Story</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </div>
     <div class="nav-cta">
-      <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+      <div class="lang-switcher"></div>
+      <a href="order.html" class="btn btn-primary btn-sm" data-i18n="nav.orderNow">Order Now</a>
     </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu">
-  <a href="index.html">Home</a><a href="menu.html" class="active">Menu</a><a href="order.html">Order Online</a>
-  <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact</a>
-  <a href="order.html" class="btn btn-primary">Order Now &rarr;</a>
+  <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" class="active" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+  <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switcher" style="margin: 0.75rem auto;"></div>
+  <a href="order.html" class="btn btn-primary" data-i18n="nav.orderNow">Order Now &rarr;</a>
 </div>
 
 <!-- PAGE HERO -->
 <div class="menu-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Menu</span></div>
-    <h1>Our Menu</h1>
-    <p>Authentic Middle Eastern &amp; Lebanese cuisine, prepared fresh daily in our Winnipeg kitchens. <span style="color:var(--gold);">Ready to order?</span> <a href="order.html" style="color:var(--gold); text-decoration:underline;">Click here</a></p>
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span class="sep">/</span><span>Menu</span></div>
+    <h1 data-i18n="menuPage.hero">Our Menu</h1>
+    <p data-i18n="menuPage.heroSub">Authentic Middle Eastern &amp; Lebanese cuisine, prepared fresh daily in our Winnipeg kitchens. <span style="color:var(--gold);">Ready to order?</span> <a href="order.html" style="color:var(--gold); text-decoration:underline;">Click here</a></p>
     <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem;">
       <span style="color:rgba(255,255,255,0.6); font-size:0.82rem; background:rgba(255,255,255,0.1); padding:0.4rem 0.9rem; border-radius:100px;"><b style="color:var(--green, #2E7D32)">Ⓥ</b> = Vegetarian/Vegan available</span>
       <span style="color:rgba(255,255,255,0.6); font-size:0.82rem; background:rgba(255,255,255,0.1); padding:0.4rem 0.9rem; border-radius:100px;">☪️ All items 100% Halal</span>
@@ -536,14 +538,14 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">Pages</div>
+        <div class="footer-heading" data-i18n="footer.pages">Pages</div>
         <div class="footer-links">
-          <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="order.html">Order Online</a>
-          <a href="catering.html">Catering</a><a href="our-story.html">Our Story</a><a href="contact.html">Contact Us</a>
+          <a href="index.html" data-i18n="nav.home">Home</a><a href="menu.html" data-i18n="nav.menu">Menu</a><a href="order.html" data-i18n="nav.order">Order Online</a>
+          <a href="catering.html" data-i18n="nav.catering">Catering</a><a href="our-story.html" data-i18n="nav.story">Our Story</a><a href="contact.html" data-i18n="nav.contact">Contact Us</a>
         </div>
       </div>
       <div>
-        <div class="footer-heading">All 3 Locations</div>
+        <div class="footer-heading" data-i18n="footer.locations">All 3 Locations</div>
         <div class="footer-locations">
           <div class="footer-location"><strong>St. James</strong><span>1038 St James St</span><a href="tel:2042198939">(204) 219-8939</a></div>
           <div class="footer-location"><strong>Pembina Hwy</strong><span>2589 Pembina Hwy #70</span><a href="tel:2046156006">(204) 615-6006</a></div>
@@ -551,14 +553,14 @@
         </div>
       </div>
       <div>
-        <div class="footer-heading">Stay Updated</div>
+        <div class="footer-heading" data-i18n="footer.stayLoop">Stay Updated</div>
         <div class="footer-newsletter"><p>Get daily specials and new menu alerts.</p>
-        <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="Your email" /><button type="submit">Go</button></form></div>
+        <form class="newsletter-form" onsubmit="return false;"><input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="Your email" /><button type="submit">Go</button></form></div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Les Saj – Middle Eastern Cuisine. All rights reserved.</p>
-      <div class="footer-halal"><span class="halal-badge">HALAL</span><span>100% Halal Certified</span></div>
+      <div class="footer-halal"><span class="halal-badge">HALAL</span><span data-i18n="footer.halal">100% Halal Certified</span></div>
     </div>
   </div>
 </footer>
@@ -566,6 +568,7 @@
 <div class="floating-order">
   <a href="order.html" class="floating-btn floating-order-btn"><i class="fas fa-shopping-bag"></i> Order Now</a>
 </div>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

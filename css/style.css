@@ -3,7 +3,7 @@
    Brand: Deep Red #8B1A1A | Gold #C9963A | Cream #FAF6F0
    ═══════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
 
 /* ── CSS Variables ── */
 :root {
@@ -900,4 +900,266 @@ p  { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
   .instagram-grid { grid-template-columns: repeat(2, 1fr); }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
   .location-actions { flex-direction: column; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   LANGUAGE SWITCHER
+══════════════════════════════════════════════════════════ */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 100px;
+  padding: 3px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.nav.scrolled .lang-switcher {
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 9px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.15);
+}
+
+.lang-btn.active {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.nav.scrolled .lang-btn {
+  color: var(--text-muted);
+}
+
+.nav.scrolled .lang-btn:hover {
+  color: var(--text);
+  background: rgba(0,0,0,0.08);
+}
+
+.nav.scrolled .lang-btn.active {
+  background: var(--gold);
+  color: var(--white);
+}
+
+/* ══════════════════════════════════════════════════════════
+   RTL SUPPORT (Arabic)
+══════════════════════════════════════════════════════════ */
+[dir="rtl"] {
+  font-family: 'Noto Sans Arabic', 'Inter', -apple-system, sans-serif;
+}
+
+/* Flip text alignment */
+[dir="rtl"] .section-header,
+[dir="rtl"] .section-label,
+[dir="rtl"] .section-title,
+[dir="rtl"] .section-subtitle {
+  text-align: center;
+}
+
+/* Nav flip */
+[dir="rtl"] .nav-inner {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-cta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-logo {
+  flex-direction: row-reverse;
+}
+
+/* Hero content */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-content h1,
+[dir="rtl"] .hero-content p {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-actions {
+  justify-content: flex-end;
+}
+
+/* Split sections */
+[dir="rtl"] .split-section {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .split-content {
+  text-align: right;
+}
+
+/* Buttons in split sections */
+[dir="rtl"] .split-content .btn {
+  align-self: flex-start;
+}
+
+/* Location rows */
+[dir="rtl"] .location-row {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .location-row > div {
+  text-align: right;
+}
+
+[dir="rtl"] .location-header {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .location-actions {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+[dir="rtl"] .footer-top {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-brand {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links {
+  align-items: flex-end;
+}
+
+[dir="rtl"] .footer-locations .footer-location {
+  align-items: flex-end;
+  text-align: right;
+}
+
+[dir="rtl"] .social-links {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+/* Form labels */
+[dir="rtl"] .form-group label,
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group select,
+[dir="rtl"] .form-group textarea {
+  text-align: right;
+}
+
+/* Review cards */
+[dir="rtl"] .review-author {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .review-card {
+  text-align: right;
+}
+
+/* Dish cards */
+[dir="rtl"] .dish-card-body {
+  text-align: right;
+}
+
+[dir="rtl"] .dish-card-footer {
+  flex-direction: row-reverse;
+}
+
+/* Founder cards */
+[dir="rtl"] .founder-bio {
+  text-align: right;
+}
+
+/* Catering notes */
+[dir="rtl"] .catering-notes {
+  border-left: none;
+  border-right: 4px solid var(--gold);
+  text-align: right;
+}
+
+/* Value cards */
+[dir="rtl"] .value-card {
+  text-align: center;
+}
+
+/* Page hero breadcrumb */
+[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* Catering perks */
+[dir="rtl"] .perk-card {
+  text-align: center;
+}
+
+/* Ticker still LTR for readability */
+[dir="rtl"] .ticker {
+  direction: ltr;
+}
+
+/* Stats bar centered regardless */
+[dir="rtl"] .stats-inner {
+  direction: rtl;
+}
+
+/* Award strip */
+[dir="rtl"] .award-strip {
+  flex-direction: row-reverse;
+}
+
+/* CTA band */
+[dir="rtl"] .cta-band {
+  text-align: center;
+}
+
+/* Mobile menu RTL */
+[dir="rtl"] .mobile-menu {
+  text-align: right;
+}
+
+/* Category cards */
+[dir="rtl"] .category-card {
+  text-align: center;
+}
+
+/* Breadcrumb separator */
+[dir="rtl"] .breadcrumb .sep {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Order platform cards */
+[dir="rtl"] .platform-card {
+  text-align: center;
+}
+
+/* Timeline items */
+[dir="rtl"] .timeline-item {
+  flex-direction: row-reverse;
+  text-align: right;
 }
