@@ -42,13 +42,20 @@
 
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden; /* ← prevents horizontal scroll at the document level */
+  max-width: 100%;
+}
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text);
   background: var(--cream);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100%;
+  position: relative; /* keeps fixed children from expanding the layout */
 }
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
@@ -900,6 +907,234 @@ p  { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
   .instagram-grid { grid-template-columns: repeat(2, 1fr); }
   .categories-grid { grid-template-columns: repeat(2, 1fr); }
   .location-actions { flex-direction: column; }
+}
+
+/* ── Mobile overflow safety net ── */
+@media (max-width: 768px) {
+  section, div, nav, footer, header {
+    max-width: 100%;
+  }
+  .hero-bg {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .ticker {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .split-section {
+    overflow: hidden;
+  }
+  .award-strip {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .footer {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  /* Nav safety */
+  .nav {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .lang-switcher {
+    flex-shrink: 0;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   VOXIRE DIGITAL SOLUTIONS — CREDIT STRIP
+══════════════════════════════════════════════════════════ */
+.voxire-credit {
+  background: #080808;
+  border-top: 2px solid #C9963A;
+  padding: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold shimmer line */
+.voxire-credit::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #C9963A 30%, #E8BE6A 50%, #C9963A 70%, transparent 100%);
+}
+
+.voxire-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.voxire-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.voxire-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.05);
+  transition: opacity 0.25s ease;
+}
+
+.voxire-logo:hover {
+  opacity: 0.85;
+}
+
+.voxire-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.voxire-built {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+.voxire-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #C9963A;
+  letter-spacing: 0.04em;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.2;
+}
+
+.voxire-person {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+.voxire-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.voxire-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.voxire-phone:hover {
+  color: #C9963A;
+}
+
+.voxire-phone i {
+  font-size: 0.72rem;
+  color: #C9963A;
+}
+
+.voxire-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.voxire-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+.voxire-social-btn:hover {
+  transform: translateY(-2px) scale(1.1);
+  border-color: transparent;
+}
+
+.voxire-social-btn.linkedin {
+  background: rgba(10, 102, 194, 0.2);
+  color: #70B5F9;
+}
+
+.voxire-social-btn.linkedin:hover {
+  background: #0A66C2;
+  color: #fff;
+}
+
+.voxire-social-btn.instagram {
+  background: rgba(225, 48, 108, 0.15);
+  color: #F77737;
+}
+
+.voxire-social-btn.instagram:hover {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737);
+  color: #fff;
+}
+
+/* Responsive Voxire strip */
+@media (max-width: 768px) {
+  .voxire-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 0 1.5rem;
+  }
+  .voxire-right {
+    align-items: center;
+  }
+  .voxire-center {
+    order: 2;
+  }
+  .voxire-left {
+    order: 1;
+  }
+  .voxire-right {
+    order: 3;
+  }
+}
+
+/* RTL Voxire */
+[dir="rtl"] .voxire-inner {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .voxire-right {
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  [dir="rtl"] .voxire-inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ══════════════════════════════════════════════════════════
